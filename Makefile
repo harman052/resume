@@ -1,4 +1,4 @@
-default: compile
+default: compile push
 
 compile:
 	@latexmk -silent -pdf -pdflatex='pdflatex -interaction=nonstopmode' resume.tex
@@ -25,9 +25,8 @@ watch:
 #build: compile
 #	@cp resume.pdf build/resume_harmanpreet_singh.pdf
 
-# Push to build branch on Github
-#push: build
-#	@ cd build && \
-#		git add -u && \
-#		git commit -m "Resume Generated On: `date +'%Y-%m-%d %H:%M:%S'`"
-#		git push origin build
+# Push to master branch on Github
+push: 
+		git add -A && \
+		git commit -m "Resume Generated On: `date +'%Y-%m-%d %H:%M:%S'`"
+		git push origin master
