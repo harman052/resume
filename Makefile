@@ -1,4 +1,4 @@
-default: compile push
+default: compile
 
 compile:
 	@latexmk -silent -pdf -pdflatex='pdflatex -interaction=nonstopmode' resume.tex
