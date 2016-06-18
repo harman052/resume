@@ -23,7 +23,7 @@ watch:
 
 # Build resume
 build: compile
-	@cp resume.pdf build/Shadab\ Zafar.pdf
+	@cp resume.pdf build/resume_harmanpreet_singh.pdf
 
 # Push to build branch on Github
 push: build

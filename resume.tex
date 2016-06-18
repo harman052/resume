@@ -5,35 +5,51 @@
 
 \usepackage[scale=0.85]{geometry}
 \setlength{\hintscolumnwidth}{3cm}
-
 % Used for showing some links in color
 \usepackage{xcolor}
-
+%%%
+% the following definition is from the file moderncvstyleclassic.sty
+\renewcommand*{\cventry}[7][.25em]{%
+  \cvitem[#1]{#2}{%
+    {\bfseries#3}%
+    \ifthenelse{\equal{#4}{}}{}{ {\slshape#4}}% no comma after bold text.
+    \ifthenelse{\equal{#5}{}}{}{ #5}% no comma after bold text.
+    \ifthenelse{\equal{#6}{}}{}{ #6}% no comma after bold text.
+    .\strut%
+    \ifx&#7&%
+      \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
+%%%
 \input{sections/bio.tex}
 
 \begin{document}
 \maketitle
 
 \vspace{0.5cm}
-\section{Work}
-
-    \input{sections/work.tex}
 
 \section{Projects}
 
     \input{sections/projects.tex}
 
+
+\section{Work}
+
+    \input{sections/work.tex}
+
+\section{Achievements}
+
+    \input{sections/achievements.tex}
+
 % \vspace{0.15cm}
 
-\pagebreak
+%\pagebreak
 
 \section{Education}
 
     \input{sections/education.tex}
 
-\section{Communication}
+%\section{Communication}
 
-    \input{sections/communication.tex}
+%    \input{sections/communication.tex}
 
 \section{Technical Skills}
 
