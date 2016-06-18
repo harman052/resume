@@ -1,5 +1,5 @@
 # Only build branch contains the output
-*.pdf
+#*.pdf
 
 build/
 
