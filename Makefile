@@ -29,4 +29,4 @@ watch:
 push:
 		git add -A && \
 		git commit -m "Resume Generated On: `date +'%Y-%m-%d %H:%M:%S'`"
-		git push origin build
+		git push origin master
