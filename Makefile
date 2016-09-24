@@ -22,11 +22,11 @@ watch:
 	@./watch
 
 # Build resume
-# build: compile
-#	@cp resume.pdf build/Shadab\ Zafar.pdf
+#build: compile
+#	@cp resume.pdf build/resume_harmanpreet_singh.pdf
 
-# Push to build branch on Github
-push:
+# Push to master branch on Github
+push: 
 		git add -A && \
 		git commit -m "Resume Generated On: `date +'%Y-%m-%d %H:%M:%S'`"
 		git push origin master

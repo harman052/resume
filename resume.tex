@@ -7,24 +7,40 @@
 \setlength{\hintscolumnwidth}{3cm}
 % Used for showing some links in color
 \usepackage{xcolor}
+<<<<<<< HEAD
 %%%
 % the following definition is from the file moderncvstyleclassic.sty
+=======
+
+%%%
+% The following definition is from the file moderncvstyleclassic.sty
+>>>>>>> ad2178bcbfdde9c1e86deb136d2ba4a3f337fa1b
 \renewcommand*{\cventry}[7][.25em]{%
   \cvitem[#1]{#2}{%
     {\bfseries#3}%
     \ifthenelse{\equal{#4}{}}{}{ {\slshape#4}}% no comma after bold text.
+<<<<<<< HEAD
     \ifthenelse{\equal{#5}{}}{}{ #5}%
     \ifthenelse{\equal{#6}{}}{}{ #6}%
+=======
+    \ifthenelse{\equal{#5}{}}{}{ #5}% no comma after bold text.
+    \ifthenelse{\equal{#6}{}}{}{ #6}% no comma after bold text.
+>>>>>>> ad2178bcbfdde9c1e86deb136d2ba4a3f337fa1b
     .\strut%
     \ifx&#7&%
       \else{\newline{}\begin{minipage}[t]{\linewidth}\small#7\end{minipage}}\fi}}
 %%%
+<<<<<<< HEAD
+=======
+
+>>>>>>> ad2178bcbfdde9c1e86deb136d2ba4a3f337fa1b
 \input{sections/bio.tex}
 
 \begin{document}
 \maketitle
 
 \vspace{0.5cm}
+<<<<<<< HEAD
 
 \section{Projects}
 
@@ -32,19 +48,37 @@
 
 
 \section{Work}
+=======
+>>>>>>> ad2178bcbfdde9c1e86deb136d2ba4a3f337fa1b
 
-    \input{sections/work.tex}
+\section{Executive Summary}
+\input{sections/summary.tex}
 
+<<<<<<< HEAD
 \section{Achievements}
 
     \input{sections/achievements.tex}
+=======
+\section{Projects}
+\input{sections/projects.tex}
 
-% \vspace{0.15cm}
+\section{Work}
+\input{sections/work.tex}
+>>>>>>> ad2178bcbfdde9c1e86deb136d2ba4a3f337fa1b
 
+\newpage
+
+<<<<<<< HEAD
 %\pagebreak
+=======
+\section{Achievements}
+\input{sections/achievements.tex}
+>>>>>>> ad2178bcbfdde9c1e86deb136d2ba4a3f337fa1b
 
 \section{Education}
+\input{sections/education.tex}
 
+<<<<<<< HEAD
     \input{sections/education.tex}
 
 %\section{Communication}
@@ -54,5 +88,9 @@
 \section{Technical Skills}
 
     \input{sections/skills.tex}
+=======
+\section{Skillset}
+\input{sections/skills.tex}
+>>>>>>> ad2178bcbfdde9c1e86deb136d2ba4a3f337fa1b
 
 \end{document}
